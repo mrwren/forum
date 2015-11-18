@@ -1,0 +1,20 @@
+<html>
+<body>
+
+	<h1>Registration</h1>
+
+	{% if errors %}
+		<p class="error">{{ errors }}</p>
+	{% endif %}
+
+	<form action="" method="post">
+		<label for="username">User name:</label>
+		<input type="text" name="username" value="" id="username">
+		<label for="password">Password:</label>
+		<input type="password" name="password" value="" id="passwor">
+
+		<input type="submit" value="login" />
+	</form>
+	or <a href="/login">login</a>
+</body>
+</html>
